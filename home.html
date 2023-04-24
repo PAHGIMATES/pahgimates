@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- <script> is for Javascript. Remember that -->
+        <script>
+            function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+        </script>
+        <title>home</title>
+        <style>
+            
+            h1 {
+                text-align: center;
+                font-family: Helvetica;
+            }
+            
+            
+            .dropdown {
+                position: relative;
+                display: inline-block;
+}
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+}
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+}
+
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .show {display:block;}
+
+            a.home {
+                margin-left: 150px;
+                font-size: x-large;
+            }
+
+            a.projects {
+                font-size: x-large;
+                margin-left: 150px;
+            }
+
+            a.contacts {
+                font-size: x-large;
+                margin-left: 150px;
+            }
+
+            a.aboutme {
+                font-size: x-large;
+                margin-left: 150px;
+            }
+
+            img {
+                width: 100px;
+                border-radius: 50px;
+                float: left;
+                margin-right: 10px;
+            }
+
+            p.username {
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+
+            p.usertext {
+                font-size: large;
+                margin-left: 50px;
+            }
+
+            h1.yosemite {
+                font-weight: bold;
+                font-size: xx-large;
+                font-family:Trebuchet MS;
+                text-align: center;
+            }
+
+            p.ex {
+                margin-left: 50px;
+                margin-right: 20px;
+                font-size: 20px;
+            }
+        </style>
+        <h1>THIS IS A WEBSITE</h1>
+        <div class="dropdown">
+            <button onClick="myFunction()" class="dropbtn">=</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="home.html">HOME</a>
+                <a href="projects.html">PROJECTS</a>
+                <a href="contacts.html">CONTACTS</a>
+                <a href="about me.html">ABOUT ME</a>
+        </div>
+    </head>
+    <body>
+        <a class="home" href="home.html">HOME</a>
+
+        <a class="projects" href="projects.html">PROJECTS</a>
+
+        <a class="contacts" href="contacts.html">CONTACTS</a>
+
+        <a class="aboutme" href="about me.html">ABOUT ME</a>
+
+        <img src="images/PAHG.jpg" alt="An image of Me :]">
+
+        <p class="username">Prince "PAHGIMATES" Shakir</p>
+
+        <p class="usertext">Hello fellow web traveler. This is my website!</p>
+
+    </body>
+    <hr>
+        <h1 class="yosemite">HOME</h1>
+            <p class="ex">more stuff</p>
+    <body>
+    </body>
+</html>
